@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <!--google fonts  -->
+
+    <!-- css files: fontawsome , bootstrap , my css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+<!--     <div class="loading">
+      <span class="loader"></span>
+    </div> -->
+
+    <!-- nav-side -->
+    <div class="nav-side d-flex bg-black">
+      <div class="big-width inner-navside">
+        <div
+          class="left-navside bg-black d-flex flex-column justify-content-between px-3 py-3"
+        >
+          <div class="hidden-top mt-3 px-2 position-relative parent-menu">
+            <ul>
+              <li class="py-2">
+                <a class="first" onclick="mySearch()">Search</a>
+              </li>
+              <li class="py-2">
+                <a class="second" onclick="mealsCategories()">Categories</a>
+              </li>
+              <li class="py-2">
+                <a class="third" onclick="mealsArea()">Area</a>
+              </li>
+              <li class="py-2">
+                <a class="fourth" onclick="mealsIngredients()">Ingredients</a>
+              </li>
+              <li class="py-2">
+                <a class="fifth" onclick="contact()">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hidden-down px-2">
+            <ul class="mt-0 pt-0 d-flex align-items-center">
+              <li class="me-1">
+                <a class="navside-link text-light" href="#">
+                  <i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="me-1">
+                <a class="navside-link text-light" href="#">
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="me-1">
+                <a class="navside-link text-light" href="#"
+                  ><i class="fa-solid fa-globe"></i
+                ></a>
+              </li>
+            </ul>
+            <p class="mb-0 pb-0 text-light">Copyright Â© 2019 All Rights</p>
+            <p class="mt-0 pt-0 text-light">Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-light p-2 align-items-center d-flex flex-column justify-content-between align-items-center small-width"
+      >
+        <img src="images/logo.png" width="50" alt="logo image" />
+
+        <div class="border-2 border-danger">
+          <span class="nav-open text-center">
+            <i class="change-icon fa-solid fa-bars fs-1"></i
+          ></span>
+        </div>
+
+        <div class="down">
+          <ul>
+            <li><i class="fa-solid fa-globe"></i></li>
+            <li><i class="fa-solid fa-share-nodes"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-one -->
+    <div class="main text-light">
+      <div id="the-meals">
+        <div class="container py-5 d-none serchh">
+          <div class="row g-4" id="search-page"></div>
+        </div>
+        <div class="container meeals py-5">
+          <div class="row g-4" id="all-meals"></div>
+        </div>
+      </div>
+    </div>
+    <!-- section-two -->
+    <div class="contact-us d-none align-items-center justify-content-center">
+      <div class="container">
+        <form>
+          <div class="row g-4 mx-auto" id="search-page">
+            <div class="col-5 offset-1">
+              <input
+                id="first-input"
+                class="the-width form-control w-100"
+                type="text"
+                name="Search-name"
+                placeholder="Enter Your Name"
+              />
+              <p class="alert alert-danger p-3 invalid-feedback">
+                Special characters and numbers not allowed
+              </p>
+            </div>
+            <div class="col-5">
+              <input
+                id="second-input"
+                class="the-width form-control w-100"
+                type="email"
+                name="Search-letter"
+                placeholder="Enter Your Email"
+              />
+              <p class="alert alert-danger p-3 invalid-feedback">
+                Email not valid *exemple@yyy.zzz
+              </p>
+            </div>
+            <div class="col-5 offset-1">
+              <input
+                id="third-input"
+                class="the-width form-control w-100"
+                type="number"
+                name="Search-name"
+                placeholder="Enter your Phone"
+              />
+              <p class="alert alert-danger p-3 invalid-feedback">
+                Enter valid Phone Number
+              </p>
+            </div>
+            <div class="col-5">
+              <input
+                id="fourth-input"
+                class="the-width form-control w-100"
+                type="number"
+                name="Search-letter"
+                placeholder="Enter Your Age"
+              />
+              <p class="alert alert-danger p-3 invalid-feedback">
+                Enter valid age
+              </p>
+            </div>
+            <div class="col-5 offset-1">
+              <input
+                id="fifth-input"
+                class="the-width form-control w-100"
+                type="password"
+                name="Search-name"
+                placeholder="Enter Your Password"
+              />
+              <p class="alert alert-danger p-3 invalid-feedback">
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </p>
+            </div>
+            <div class="col-5">
+              <input
+                id="six-input"
+                class="the-width form-control w-100"
+                type="password"
+                name="Search-letter"
+                placeholder="RePassword"
+              />
+              <p class="alert alert-danger p-3 invalid-feedback">
+                Enter valid repassword
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <button
+              id="op"
+              type="submit"
+              class="btn btn-outline-danger px-2 mt-3 disabled"
+            >
+              submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- js files: jquery , bootstrap , my js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
